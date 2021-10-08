@@ -51,10 +51,6 @@ import { JwtInterceptor } from './helpers/jwt.interceptor';
 import { ResetpassComponent } from './pages/resetpass/resetpass.component';
 import { AdminReturnisoComponent } from './pages/admin/components/admin-iso/components/admin-returniso/admin-returniso.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -101,19 +97,18 @@ import { AdminReturnisoComponent } from './pages/admin/components/admin-iso/comp
     SearchfilterPipe,
     ResetpassComponent,
     AdminReturnisoComponent,
-  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
-    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
-    ,CompanyService
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    CompanyService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

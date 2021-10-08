@@ -58,9 +58,10 @@ export class ProgramService {
     return this.http.post(this.apiUrl + 'api/Track', postVal);
   }
 
-  getSingleTrack(id:number): Observable<tracksModel[]> {
-    return this.http.get<tracksModel[]>(this.apiUrl+'api/Track').pipe(map((eachT)=>eachT.filter((eachT)=> eachT.id == id)));
-
+  getSingleTrack(id: number): Observable<tracksModel[]> {
+    return this.http
+      .get<tracksModel[]>(this.apiUrl + 'api/Track')
+      .pipe(map((eachT) => eachT.filter((eachT) => eachT.id == id)));
   }
   updateTrack(postVal) {
     return this.http.put(this.apiUrl + 'api/Track', postVal);
