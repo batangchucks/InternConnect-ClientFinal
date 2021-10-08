@@ -1,9 +1,11 @@
-    <!-- ISO Code -->
+<!-- ISO Code -->
 
-    <h1 class="pt-6 flex items-center sm:px-6 lg:px-8 text-3xl font-extrabold">Manage ISO code</h1>
-    <div class="pt-5 align-middle inline-block min-w-full ">
-      <h1 class="inline-block text-xl font-semibold text-gray-900 tracking-tight sm:px-6 lg:px-8 pb-5">Assign a range of
-        ISO codes</h1>
+<h1 class="pt-6 flex items-center sm:px-6 lg:px-8 text-3xl font-extrabold">Manage ISO code</h1>
+<div class="pt-5 align-middle inline-block min-w-full ">
+  <div class="grid grid-cols-2 my-12 sm:px-6 lg:px-8">
+    <section class="range">
+      <h1 class="inline-block text-xl font-semibold text-gray-900 tracking-tight sm:px-6 lg:px-8 pb-5">Assign a
+        range of ISO codes</h1>
       <div class="flex flex-col">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 sm:px-6 lg:px-8">
           <div class="py-6 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -14,17 +16,17 @@
                   <tbody class="bg-white divide-y divide-gray-200">
                     <tr>
                       <!-- <td class="px-2 py-4 whitespace-nowrap">
-                        <label for="state" class="block text-sm font-medium text-gray-700">Input the alloted ISO code for the whole department </label>
-                        <input type="text" name="state" id="state"
-                          class="w-3/6 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block shadow-sm sm:text-sm border-gray-300 rounded-md"formControlName="isoCode">
-                        <div class="" style="display: none;">
-                            <input type="text" formControlName="id">
-                        </div>
-                        <p class="text-xs font-light">The ISO codes will be distributed to the entire program.</p>
+                      <label for="state" class="block text-sm font-medium text-gray-700">Input the alloted ISO code for the whole department </label>
+                      <input type="text" name="state" id="state"
+                      class="w-3/6 mt-1 focus:ring-indigo-500 focus:border-indigo-500 block shadow-sm sm:text-sm border-gray-300 rounded-md"formControlName="isoCode">
+                      <div class="" style="display: none;">
+                      <input type="text" formControlName="id">
+                      </div>
+                      <p class="text-xs font-light">The ISO codes will be distributed to the entire program.</p>
                       </td>
                       <td class="pt-9 px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <button class="block h-8 px-4 text-white transition-colors duration-150 bg-green-600 
-                        rounded-full focus:shadow-outline hover:bg-green-700">Assign</button>
+                      <button class="block h-8 px-4 text-white transition-colors duration-150 bg-green-600 
+                      rounded-full focus:shadow-outline hover:bg-green-700">Assign</button>
                       </td> -->
 
                       <td class="px-2 py-4 whitespace-nowrap">
@@ -38,11 +40,6 @@
                       <td class="px-2 py-4 whitespace-nowrap text-sm text-gray-500">
                         <label for="start" class="block text-sm font-medium text-gray-700">Start</label>
                         <input type="text" name="start" id="start"
-                          class="mt-1 focus:ring-green-500 focus:border-green-500 block w-20 shadow-sm sm:text-sm border-gray-300 rounded-md">
-                      </td>
-                      <td class="px-2 py-4 whitespace-nowrap text-sm text-gray-500">
-                        <label for="end" class="block text-sm font-medium text-gray-700">End</label>
-                        <input type="text" name="end" id="state"
                           class="mt-1 focus:ring-green-500 focus:border-green-500 block w-20 shadow-sm sm:text-sm border-gray-300 rounded-md">
                       </td>
                       <td class="pt-9 px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
@@ -72,11 +69,11 @@
                     </th>
                     <th scope="col"
                       class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      Start
+                      Section
                     </th>
                     <th scope="col"
                       class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                      End
+                      ISO Code
                     </th>
                   </tr>
                 </thead>
@@ -96,7 +93,7 @@
                       <div class="flex items-center">
                         <div class="ml-4">
                           <div class="text-sm text-gray-500">
-                            1
+                            4-ITH
                           </div>
                         </div>
                       </div>
@@ -111,10 +108,12 @@
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="specific pt-6">
       <!-- Manual input -->
-      <h1 class="inline-block text-xl font-semibold text-gray-900 tracking-tight sm:px-6 lg:px-8 pb-5">Assign specific
-        ISO codes</h1>
+      <h1 class="inline-block text-xl font-semibold text-gray-900 tracking-tight sm:px-6 lg:px-8 pb-5">Assign
+        specific ISO codes</h1>
       <div class="flex flex-col">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8 sm:px-6 lg:px-8">
           <div class="align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -162,6 +161,10 @@
                     </th>
                     <th scope="col"
                       class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      Section
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                       ISO Code
                     </th>
                   </tr>
@@ -182,6 +185,15 @@
                       <div class="flex items-center">
                         <div class="ml-4">
                           <div class="text-sm text-gray-500">
+                            4-ITH
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="px-2 py-4 whitespace-nowrap">
+                      <div class="flex items-center">
+                        <div class="ml-4">
+                          <div class="text-sm text-gray-500">
                             1
                           </div>
                         </div>
@@ -194,4 +206,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+  </div>
+</div>
